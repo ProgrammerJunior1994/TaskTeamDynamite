@@ -39,9 +39,16 @@ public class ExpresionesFastDon {
                 case 1:
                     System.out.println("Ingresa la declaracion de una variable entera: ");
                     String entera = sc.nextLine();
+<<<<<<< HEAD
                     String varentera = "^\\s*int\\s+^[a-zA-Z0-9_]*(\\s*;)*((\\s*=\\s*-?\\d+)*?\\s*;\\s*)*$";
                     if (entera.matches(varentera)) {
                         System.out.println("Declaracion valida.");
+=======
+                    String varentera = "^int\\s+[a-zA-Z0-9_]*\\s*(=\\s*\\d+)?\\s*;$";
+                    if (entera.matches(varentera)) {
+                        System.out.println("Declaracion valida.");
+                        error = false;
+>>>>>>> parent of 34a9a47 (Respaldo (no esta completo))
                     } else {
                         System.out.println("Declaracion invalida.");
                         error = true;
@@ -58,18 +65,36 @@ public class ExpresionesFastDon {
                     } else {
                         System.out.println("Declaracion invalida.");
                         error = false;
+<<<<<<< HEAD
                     }
+=======
+                    } 
+>>>>>>> parent of 34a9a47 (Respaldo (no esta completo))
                     break;
                 case 3:
                     System.out.println("Ingresa la declaracion de una variable doble: ");
                     String doble = sc.nextLine();
+<<<<<<< HEAD
                     String 
+=======
+>>>>>>> parent of 34a9a47 (Respaldo (no esta completo))
                     error = false;
                     break;
                 case 4:
                     System.out.println("Ingresa la declaracion de una variable flotante: ");
                     String flotante = sc.nextLine();
+<<<<<<< HEAD
 
+=======
+                    String varfloat = "^\\s*\\s+[a-zA-Z_][a-zA-Z0-9_]*(\\s*=\\s*\"*\")?\\s*;\\s*$";
+                    if (flotante.matches(varfloat)) {
+                        System.out.println("Declaracion valida.");
+                        error = false;
+                    } else {
+                        System.out.println("Declaracion invalida.");
+                        error = false;
+                    }
+>>>>>>> parent of 34a9a47 (Respaldo (no esta completo))
                     error = false;
                     break;
                 case 0:
