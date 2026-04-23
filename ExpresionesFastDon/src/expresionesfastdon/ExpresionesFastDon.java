@@ -37,8 +37,8 @@ public class ExpresionesFastDon {
                         System.out.println("Ingresa una expresion para verificar:");
                         System.out.println("1. Declaracion de una variable Entera (int).");
                         System.out.println("2. Declaracion de una variable de Cadena (String).");
-                        System.out.println("3. Declaracion de una variable doble (double)."); // Eliminar números con números decimal y flotantes (Double y Float)
-                        System.out.println("4. Declaracion de una variable flotante (float).");
+//                        System.out.println("3. Declaracion de una variable doble (double)."); // Eliminar números con números decimal y flotantes (Double y Float)
+//                        System.out.println("4. Declaracion de una variable flotante (float).");
                         System.out.println("5. Declaracion de una variable Booleana (boolean).");
                         System.out.println("Presiona 0 para salir del programa.");
                         opc = sc.nextInt();
@@ -74,27 +74,27 @@ public class ExpresionesFastDon {
                             }
                             break;
 
-                        case 3:
-                            System.out.println("Ingresa la declaracion de una variable doble: ");
-                            String doble = sc.nextLine();
-                            String varDouble = "^\\s*double\\s+[a-zA-Z_][a-zA-Z0-9_]*(\\s*=\\s*-?\\d+(\\.\\d+)?)?\\s*;\\s*$";
-                            if (doble.matches(varDouble)) {
-                                System.out.println("!!!Declaracion valida!!!");
-                            } else {
-                                System.out.println("Declaracion invalida.");
-                            }
-                            break;
-
-                        case 4:
-                            System.out.println("Ingresa la declaracion de una variable flotante: ");
-                            String flotante = sc.nextLine();
-                            String varfloat = "^\\s*float\\s+[a-zA-Z_][a-zA-Z0-9_]*(\\s*=\\s*-?\\d+(\\.\\d+)?)?\\s*;\\s*$";
-                            if (flotante.matches(varfloat)) {
-                                System.out.println("!!!Declaracion valida!!!");
-                            } else {
-                                System.out.println("Declaracion invalida.");
-                            }
-                            break;
+//                        case 3:
+//                            System.out.println("Ingresa la declaracion de una variable doble: ");
+//                            String doble = sc.nextLine();
+//                            String varDouble = "^\\s*double\\s+[a-zA-Z_][a-zA-Z0-9_]*(\\s*=\\s*-?\\d+(\\.\\d+)?)?\\s*;\\s*$";
+//                            if (doble.matches(varDouble)) {
+//                                System.out.println("!!!Declaracion valida!!!");
+//                            } else {
+//                                System.out.println("Declaracion invalida.");
+//                            }
+//                            break;
+//
+//                        case 4:
+//                            System.out.println("Ingresa la declaracion de una variable flotante: ");
+//                            String flotante = sc.nextLine();
+//                            String varfloat = "^\\s*float\\s+[a-zA-Z_][a-zA-Z0-9_]*(\\s*=\\s*-?\\d+(\\.\\d+)?)?\\s*;\\s*$";
+//                            if (flotante.matches(varfloat)) {
+//                                System.out.println("!!!Declaracion valida!!!");
+//                            } else {
+//                                System.out.println("Declaracion invalida.");
+//                            }
+//                            break;
 
                         case 5:
                             System.out.println("Ingresa la declaracion de una variable booleana: ");
